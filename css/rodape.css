@@ -1,0 +1,84 @@
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+}
+
+.rodape__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--azul-principal);
+    margin-bottom: 1em;
+}
+
+.rodape__copy {
+    font-size: 13px;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.desk {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .desk {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 4em;
+    }
+    .rodape {
+        margin: 2em;
+    }
+
+    .logo_desk {
+        height: 60px;
+        width: 185px;
+    }
+
+    .rodape__logo {
+        display: none;
+    }
+
+    .rodape__titulo {
+        display: none;
+    }
+
+    .rodape__contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contato__titulo {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        margin-bottom: .2em;
+        font-size: 16px;
+    }
+    .whats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whats__logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    .telefone {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+    }
+
+    .rodape__copy {
+        font-size: 16px;
+    }
+}

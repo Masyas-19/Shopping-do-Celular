@@ -1,0 +1,155 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.container__botao:checked ~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img//Menu_Aberto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding: .5em 1em;
+}
+
+
+
+.container__botao:checked ~.container__rotulo {
+    background: linear-gradient(90deg, var(--azul-principal), var(--azul-dois));
+
+}
+
+
+.cabecalho {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: .5em .5em .5em 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+ 
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+    padding: 0 1em;
+
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+
+.lista-menu__item {
+    padding: 1em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.lista-menu__item:hover {
+    background: linear-gradient(90deg, var(--azul-principal), var(--azul-dois));
+}
+
+.lista-menu__item:hover .lista-menu__link {
+    color: #fff;;
+}
+
+.lista-menu__item:active {
+    background: var(--amarelo-principal);
+}
+
+
+.lista-menu__link {
+    color: var(--azul-principal);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    
+}
+
+
+
+.container__botao {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.contato {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        justify-content: center;
+        margin: 0 2em;
+    }
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes {
+        display: flex;
+        padding: 0 6em;
+    }
+
+    .opcoes__item {
+        margin: 0 1em;
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+    }
+    .opcoes__link {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: .5s;
+    }
+
+    .opcoes__link:hover {
+        color: var(--amarelo-principal);
+    }
+
+    .logo {
+        width: 260px;
+        height: 80px;
+        padding: 1em;
+    }
+
+    .contato{
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: .5s;
+        font-family: var(--fonte-principal);
+        border-left: 2px solid var(--azul-principal);
+        padding: .5em;
+    }
+
+    .contato:hover {
+        color: var(--amarelo-principal);
+    }
+}

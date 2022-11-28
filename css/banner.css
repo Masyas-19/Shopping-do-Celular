@@ -1,0 +1,31 @@
+.banner {
+    background: linear-gradient(90deg, var(--azul-principal), var(--azul-dois));
+    padding: 2em;
+}
+
+.banner__titulo {
+    color: var(--amarelo-principal);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 2em; 
+}
+
+.banner__texto {
+    color: #fff;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-size: 16px;
+}
+
+@media  screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .banner__texto {
+        font-size: 18px;
+    }
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping do Celular</title>
+    
+    <link rel="icon" type="img/png" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<body>
+    <header class="cabecalho">
+        <div class="container"> 
+            <img src="img/logotipo_nome2.png" alt="logotipo da empresa" class="logo">
+        </div>
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu" class="container__rotulo">
+            <span class="cabecalho__menu-hamburguer container__imagem"></span>    
+        </label>
+
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Peças</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Acessórios</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Assistência Técnica</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Contato</a>
+            </li>
+        </ul>
+
+        <ul class="opcoes">
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Peças</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Acessórios</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Assistência Técnica</a>
+            </li>
+        </ul>
+        
+       <a href="#" class="contato">Contato</a>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Shopping do Celular</h2>
+        <p class="banner__texto">Encontre peças e acessórios para o seu celular!</p>
+    </section>
+    <section class="principal">
+        <h2 class="principal__titulo">Produtos e Serviços</h2>
+        <div class="cards">
+        <div class="card card__pecas">
+            <img src="img/pecas-1.png" alt="peças de celular" class="img__mobile">
+            <img src="img/pecas_desk.png" alt="peças de celular" class="img__desk">
+            <div class="card__conteudo">
+                <h3 class="conteudo__titulo">Peças</h3>
+                <ul class="conteudo__lista">
+                    <li class="lista__item">Telas</li>
+                    <li class="lista__item">Baterias</li>
+                    <li class="lista__item">Flex</li>
+                </ul>
+            </div>
+            <a href="#" class="conteudo__botao">Confira!</a>
+        </div>
+        <div class="card card__acessorios">
+            <img src="img/acessorios.png" alt="acessorios de celular" class="img__mobile">
+            <img src="img/acessorios_desk.png" alt="acessorios de celular" class="img__desk">
+            <div class="card__conteudo">
+                <h3 class="conteudo__titulo">Acessórios</h3>
+                <ul class="conteudo__lista">
+                    <li class="lista__item">Carregadores</li>
+                    <li class="lista__item">Capas</li>
+                    <li class="lista__item">Películas</li>
+                </ul>
+            </div>
+            <a href="#" class="conteudo__botao">Confira!</a>
+        </div>
+        <div class="card card__assistencia">
+            <img src="img/assist.png" alt="peças de celular" class="img__mobile">
+            <img src="img/assist.png" alt="peças de celular" class="img__desk">
+            <div class="card__conteudo">
+                <h3 class="conteudo__titulo">Assistência Técnica</h3>
+                <ul class="conteudo__lista">
+                    <li class="lista__item">Conserto</li>
+                    <li class="lista__item">Instalação</li>
+                    <li class="lista__item">Orçamento</li>
+                    
+                </ul>
+            </div>
+            <a href="#" class="conteudo__botao">Confira!</a>
+        </div>
+    </div> 
+    </section>
+    <section class="localizacao">
+        <h2 class="localizacao__titulo">Localização</h2>
+        <p class="localizacao__endereco">R. Luís Cerqueira, 180 - 06 - Centro, Manhuaçu - MG, 36900-000</p>
+        <div class="container_mapa">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d467.88438093147533!2d-42.03352892405894!3d-20.255722089553316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x35a6a13902b775cb!2sShopping%20do%20Celular%20Atacado!5e0!3m2!1spt-BR!2sbr!4v1669217078131!5m2!1spt-BR!2sbr" 
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <img src="img/local_foto.png" alt="foto do lugar da loja" class="localizacao__foto">
+    </section>
+
+    <hr/>
+    <footer class="rodape">
+        <img src="img/logo.png" alt="logotipo da empresa" class="rodape__logo">
+        <div class="desk">
+            <img src="img/logotipo_nome2.png" alt="logotipo da empresa" class="logo_desk">
+            <div class="rodape__contato">
+                <h3 class="contato__titulo">Entre em contato conosco!</h3>
+                <div class="whats">
+                    <img src="img/whats.png" alt="logo do whatsapp" class=whats__logo>
+                   <p class="telefone">(XX)XXXXX-XXXX</p>
+                </div> 
+            </div>
+        </div>
+        <h2 class="rodape__titulo">Shopping do Celular</h2>
+        <p class="rodape__copy">© Copyrigth Shopping do Celular 2022</p>
+    </footer>
+    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=27988177909"><img 
+        src="img/whats.png" style="height:64px; position:fixed; bottom: 25px; right: 
+        25px; z-index:99999;" data-selector="img" alt="link whatsapp de contato"></a>
+</body>
+</html>
