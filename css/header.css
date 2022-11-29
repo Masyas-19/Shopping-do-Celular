@@ -125,6 +125,7 @@
         text-transform: uppercase;
         font-weight: 500;
         transition: .5s;
+        color: var(--azul-principal);
     }
 
     .opcoes__link:hover {
