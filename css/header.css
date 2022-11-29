@@ -146,6 +146,7 @@
         font-weight: 500;
         transition: .5s;
         font-family: var(--fonte-principal);
+        color: var(--azul-principal);
         border-left: 2px solid var(--azul-principal);
         padding: .5em;
     }
